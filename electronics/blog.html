@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Electronics Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.gallery, .reviews {
+	margin-bottom: 50px;
+}
+
+.gallery h2, .reviews h2 {
+	margin-bottom: 20px;
+}
+
+.images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.images img {
+	flex: 1 1 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	max-width: 100%;
+	height: auto;
+}
+
+.images img:last-child {
+	margin-right: 0;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+form select {
+	height: 40px;
+}
+
+form textarea {
+	height: 100px;
+}
+
+form button[type="submit"] {
+	background-color: #0066cc;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+	background-color: #0052a3;
+}
+
+    </style>
+  </head>
+  <body style="background-color: #333;">
+    <header>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+	  <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.png" alt="Facebook" width="35px"></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter" width="35px"></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram" width="35px"></a>
+          <a href="#"><img src="images/whatsapp.png" alt="whatsapp" width="35px"></a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+		<div class="gallery">
+			<h2>Our Services/Products Gallery</h2>
+			<div class="images">
+				<img src="images/blog1.jpg" alt="Product 1" width="100px">
+				<img src="images/blog2.webp" alt="Product 2" width="100px">
+				<img src="images/blog3.jpg" alt="Product 3" width="100px">
+				<img src="images/blog4.jpg" alt="Product 4" width="100px">
+			</div>
+		</div>
+		<div class="reviews">
+			<h2>Service/Product Delivery Reviews</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="service">Service/Product:</label>
+				<select id="service" name="service" required>
+					<option value="">Select a service/product</option>
+					<option value="Product 1">Product 1</option>
+					<option value="Product 2">Product 2</option>
+					<option value="Product 3">Product 3</option>
+					<option value="Product 4">Product 4</option>
+				</select>
+				<label for="rating">Rating:</label>
+				<input type="number" id="rating" name="rating" min="1" max="5" required>
+				<label for="comment">Comment:</label>
+				<textarea id="comment" name="comment" required></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+  </body>
+</html>

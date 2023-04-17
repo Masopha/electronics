@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Electronics Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+/* Page container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Organizational structure table */
+.organizational-structure {
+  margin-bottom: 50px;
+}
+.organizational-structure table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.organizational-structure th,
+.organizational-structure td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.organizational-structure th {
+  background-color: #f2f2f2;
+}
+
+/* Company history, aims, and objectives sections */
+.company-history,
+.company-aims,
+.company-objectives {
+  margin-bottom: 50px;
+}
+.company-history h2,
+.company-aims h2,
+.company-objectives h2 {
+  margin-bottom: 20px;
+}
+
+/* Company aims and objectives lists */
+.company-aims ul,
+.company-objectives ul {
+  list-style: none;
+}
+.company-aims li,
+.company-objectives li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.company-aims li:before,
+.company-objectives li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+}
+
+/* Flex container for company history, aims, and objectives sections */
+.company-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Responsive layout for company history, aims, and objectives sections */
+@media screen and (max-width: 767px) {
+  .company-info {
+    flex-direction: column;
+  }
+  .company-history,
+  .company-aims,
+  .company-objectives {
+    width: 100%;
+  }
+}
+
+/* Images in organizational structure table */
+.organizational-structure img {
+  max-width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Overall page styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+h1, h2 {
+  font-weight: normal;
+}
+    </style>
+  </head>
+  <body style="background-color: darkgray;">
+    <header style="background-color: #333;">
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+	        <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.png" alt="Facebook" width="35px"></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter" width="35px"></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram" width="35px"></a>
+          <a href="#"><img src="images/whatsapp.png" alt="whatsapp" width="35px"></a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="organizational-structure">
+        <h2>Organizational Structure</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Email</th>
+              <th>Photo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>CEO</td>
+              <td>johndoe@gmail.com</td>
+              <td><img src="images/o4.webp" alt="John Doe"></td>
+            </tr>
+            <tr>
+              <td>Smith</td>
+              <td>CFO</td>
+              <td>janesmith@gmail.com</td>
+              <td><img src="images/o2.jpg" alt="Jane Smith"></td>
+            </tr>
+            <tr>
+              <td>Mike</td>
+              <td>COO</td>
+              <td>mikejohnson@gmail.com</td>
+              <td><img src="images/o3.jpg" alt="Mike Johnson"></td>
+            </tr>
+            <tr>
+              <td>Lee</td>
+              <td>CTO</td>
+              <td>saralee@gmail.com</td>
+              <td><img src="images/o1.jpg" alt="Sara Lee"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="company-history">
+        <h2>Company History</h2>
+        <p>Founded in 1995, our company began as a small retail store selling electronics in the heart of downtown. 
+          Our mission was to provide customers with the latest and greatest technology at affordable prices.
+           As we grew in popularity, we expanded our inventory to include a wider range of products,
+            from computers and phones to home entertainment systems and gaming consoles.
+
+          Over the years, we have established ourselves as a trusted name in the electronics industry,
+           with a loyal customer base and a reputation for excellent customer service. In 2010, 
+           we opened our first online store, allowing us to reach customers around the world</p>
+      </div>
+     
+      <div class="company-aims">
+        <h2>Smart Electronics Aims</h2>
+        <ul>
+          <li>Provide customers with the latest and most innovative technology products.</li>
+          <li>Offer competitive pricing and deals to ensure affordability for all customers.</li>
+          <li>Deliver exceptional customer service and support to create a positive shopping experience.</li>
+        </ul>
+      </div>
+      <div class="company-objectives">
+        <h2>Smart Electronics Objectives</h2>
+        <ul>
+          <li>Increase online sales revenue by 20% within the next fiscal year through targeted marketing and advertising campaigns</li>
+          <li>Expand product offerings to include a line of eco-friendly and sustainable electronics
+             to meet growing customer demand for environmentally responsible products</li>
+          <li>Improve customer satisfaction ratings by 10% through enhanced employee training programs 
+            and streamlined customer service processes</li>
+        </ul>
+      </div>
+    
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Electronics Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color for the page */
+body {
+    background-color: #f2f2f2;
+}
+
+/* Style the container for the page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the Contact Us section */
+.contact {
+    margin-bottom: 40px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.contact li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Style the social media section */
+.social-media {
+    margin-bottom: 40px;
+}
+
+.social-media h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    background-color: #3b5998;
+    border-radius: 50%;
+}
+
+/* Style the map section */
+.map {
+    margin-bottom: 40px;
+}
+
+.map h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style the contact form */
+.form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.form h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form textarea {
+    height: 150px;
+}
+
+.form button[type="submit"] {
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #2d4373;
+}
+
+    </style>
+  </head>
+  <body style="background-color: darkgray;">
+    <header>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+	  <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.png" alt="Facebook" width="35px"></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter" width="35px"></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram" width="35px"></a>
+          <a href="#"><img src="images/whatsapp.png" alt="whatsapp" width="35px"></a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+		<div class="contact">
+			<h2>Contact Us</h2>
+			<p>Get in touch with us by phone, email, or visit us at our office:</p>
+			<ul>
+				<li><i class="fas fa-phone"></i> Phone: 222-456-7890</li>
+				<li><i class="fas fa-envelope"></i> Email: Smart Electronics@gmail.com</li>
+				<li><i class="fas fa-map-marker-alt"></i> Address: Maseru 100, Ha-Tshetsane</li>
+			</ul>
+			<div class="social-media">
+				<h3>Follow Us on Social Media</h3>
+				<div class="icons">
+					<a href="#"><img src="images/facebook.png" alt="" width="40px"> facebook</a>
+					<a href="#"><img src="images/whatsapp.png" alt="" width="40px"> whatsapp</a>
+                    <a href="#"><img src="images/instagram.png" alt="" width="40px"> instagram</a>
+                    <a href="#"><img src="images/twitter.png" alt="" width="40px"> twitter</a>
+				</div>
+			</div>
+			<div class="map">
+				<h3>Find Us on the Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d55659.02581424645!2d27.51201274282876!3d-29.32079375094485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMaseru%2C%20Ha%20Thetsane!5e0!3m2!1sen!2sls!4v1681426644010!5m2!1sen!2sls" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+		</div>
+		<div class="form">
+			<h2>Send Us a Message</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+  </body>
+</html>
